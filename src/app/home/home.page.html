@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border" no-border>
+  <ion-toolbar color="primary" mode="ios">
+    <ion-title color="tertiary">
+      Super Tabs
+    </ion-title>
+    <preferences slot="end"></preferences>
+  </ion-toolbar>
+</ion-header>
+<super-tabs activeTabIndex="1" [config]="{ debug: true, sideMenu: 'left', allowElementScroll: true }">
+  <super-tabs-toolbar slot="top">
+    <super-tab-button>
+      <ion-icon name="star"></ion-icon>
+      <ion-label>Favourites</ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-icon name="contacts"></ion-icon>
+      <ion-label>Contacts</ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-icon name="person"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </super-tab-button>
+  </super-tabs-toolbar>
+
+  <super-tabs-container autoScrollTop>
+    <super-tab class="ion-padding">
+      <ion-card *ngFor="let i of [1,2,3,4,4,5,5,5,5]">
+        <ion-card-header>
+          <ion-card-title>Some card</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Some content
+        </ion-card-content>
+      </ion-card>
+    </super-tab>
+    <super-tab>
+      <ion-nav [root]="contactsPage"></ion-nav>
+    </super-tab>
+    <super-tab>
+      <ion-nav [root]="profilePage"></ion-nav>
+    </super-tab>
+  </super-tabs-container>
+</super-tabs>
