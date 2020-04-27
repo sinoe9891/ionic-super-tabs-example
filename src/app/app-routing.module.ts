@@ -12,6 +12,7 @@ const routes: Routes = [
     path: 'examples/scrollable',
     loadChildren: () => import('./+pages/scrollable/scrollable.module').then( m => m.ScrollablePageModule)
   },
+
 ];
 
 @NgModule({

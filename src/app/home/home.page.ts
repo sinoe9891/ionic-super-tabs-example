@@ -4,6 +4,7 @@ import { SuperTabsConfig } from '@ionic-super-tabs/core';
 import { PopoverController } from '@ionic/angular';
 import { ContactsPage } from '../contacts/contacts.page';
 import { ProfilePage } from '../profile/profile.page';
+import { PruebaPage } from '../prueba/prueba.page';
 
 
 @Component({
@@ -17,6 +18,7 @@ export class HomePage implements AfterViewInit {
 
   contactsPage = ContactsPage;
   profilePage = ProfilePage;
+  pruebaPage = PruebaPage;
   opts = {
     icon: false,
     label: true,

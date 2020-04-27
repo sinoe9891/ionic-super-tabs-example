@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PreferencesModule } from '../+components/preferences/preferences.module';
 import { ContactsPageModule } from '../contacts/contacts.module';
 import { ProfilePageModule } from '../profile/profile.module';
+import { PruebaPageModule } from '../prueba/prueba.module';
 
 import { HomePage } from './home.page';
 
@@ -26,6 +27,7 @@ import { HomePage } from './home.page';
     ContactsPageModule,
     ProfilePageModule,
     PreferencesModule,
+    PruebaPageModule,
   ],
   declarations: [HomePage],
 })
